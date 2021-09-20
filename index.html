@@ -23,12 +23,12 @@
           </a>
 
           <!-- навигация в центре-->
-          <nav class="nav-bar" id="nav-bar">
-            <ul class="nav-bar__list list-reset nav-link">
+          <nav id="nav-bar" class="nav-bar">
+            <ul class="nav-bar__list list-reset">
               <!-- <li class="nav-bar__item"><a href="#" class="nav-bar__link nav-link">HOME</a></li> -->
-              <li class="nav-bar__item"><a href="#sale" class="nav-bar__link nav-link">SALE</a></li>
-              <li class="nav-bar__item"><a href="#video" class="nav-bar__link nav-link">VIDEO</a></li>
-              <li class="nav-bar__item"><a href="#subscribe" class="nav-bar__link nav-link">SUBSCRIBE</a></li>
+              <li class="nav-bar__item"><a class="nav-link" href="#sale">SALE</a></li>
+              <li class="nav-bar__item"><a class="nav-link" href="#video">VIDEO</a></li>
+              <li class="nav-bar__item"><a class="nav-link" href="#subscribe">SUBSCRIBE</a></li>
             </ul>
           </nav>
 
@@ -189,10 +189,10 @@
             <h3 class="subscribe__title reset-list">SUBSCRIBE</h3>
             <p class="subscribe__desc">Subscribe us and you won't miss the new arrivals, as well as discounts and sales.
             </p>
-            <div class="subscribe__field">
-              <input id="form" type="email" class="subscribe__input" placeholder="Your Email">
-              <button id="submit" class="subscribe__btn btn-reset">Subscribe</button>
-            </div>
+            <form class="subscribe__field " id="form" action="https://www.freecodecamp.com/email-submit">
+              <input name="email" class="subscribe__input" id="email" type="email" placeholder="Your Email" required></input>
+              <input id="submit" type="submit" value="Subscribe" class="subscribe__btn btn-reset">
+            </form>
           </div>
           <div class="subscribe__right"><img src="images/subscribe.png" alt="" class="subscribe__image">
           </div>

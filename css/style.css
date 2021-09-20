@@ -179,6 +179,12 @@ body {
     min-height: 743px;
 }
 
+@media screen and (max-width: 1279px) {
+    .hero__container {
+        padding-left: 20px;
+    }
+}
+
 .hero__title {
     font-size: 80px;
     font-weight: bold;
@@ -396,8 +402,6 @@ body {
     border-radius: 5px;
 }
 
-.sale__count {}
-
 .sale__timer {
     font-weight: bold;
     font-size: 16px;
@@ -515,8 +519,6 @@ body {
     color: #FFFFFF;
 }
 
-
-
 .subscribe__input {
     background: rgba(255, 255, 255, 0.11);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -542,6 +544,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .footer__left {
     padding-bottom: 52px;
 }
@@ -553,8 +556,7 @@ body {
     background-size: cover;
 }
 
-.footer__right {
-}
+.footer__right {}
 
 .footer__title {
     margin: 0;
@@ -618,5 +620,4 @@ body {
 
 .footer__items:not(:last-child) {
     padding-right: 18px;
-
 }
